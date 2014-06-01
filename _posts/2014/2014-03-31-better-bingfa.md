@@ -2,7 +2,7 @@
 layout: post
 title: "并发不是并行，它更好!(转载)"
 date: 2014-03-31T23:30:00-08:00
-categories : 架构与性能
+categories : arch
 ---
 本文转载至[并发不是并行，它更好!][1],请大家多多支持他们。
 
