@@ -1,0 +1,6 @@
+permalink: /:year/:month/:day/:title
+pygments:  false
+safe:      false
+encoding: utf-8
+markdown: rdiscount
+url: http://51write.github.io
