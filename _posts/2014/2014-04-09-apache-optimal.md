@@ -90,10 +90,10 @@ Prefork优化的关键在于MaxClients与MaxRequestsPerChild。
 
 最佳的值：
 
-       apache_max_process_with_good_perfermance \< (total_hardware_memory /
-       apache_memory_per_process )  \* 2 ；
+       apache_max_process_with_good_perfermance < (total_hardware_memory /
+       apache_memory_per_process )  * 2 ；
 
-       apache_max_process = apache_max_process_with_good_perfermance \* 1.5
+       apache_max_process = apache_max_process_with_good_perfermance * 1.5
 
 计算httpd平均占用内存
 
@@ -105,10 +105,10 @@ Prefork优化的关键在于MaxClients与MaxRequestsPerChild。
 
 显示每个进程占用了大约100M的内存，假设机器内存为32G，可拿出16G用于Apache。代入公式，得出
 
-       apache_max_process_with_good_perfermance = 16 \* 1024 \* 1024 /
-       108468\*2=309
+       apache_max_process_with_good_perfermance = 16 * 1024 * 1024 /
+       108468*2=309
 
-       apache_max_process  = 309 \* 1.5=464
+       apache_max_process  = 309 * 1.5=464
 
 所以MaxClients可以设置为464
 
