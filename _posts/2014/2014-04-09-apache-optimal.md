@@ -248,7 +248,7 @@ Syntax OK
 
 **MaxRequestsPerChild**
 
-上述的优化，情况没有明显改善，对于一个仅有小部分的图片、js与小量数据查询的应用，一个进程平均占用102468的内存不合理。联想到MaxRequestsPerChild可能有影响，别忘了，除非进程处理request的数量超过这个值，不然资源不会被释放。查看http.conf。确定这个值为0，将这个值改为400。光滑重庆
+上述的优化，情况没有明显改善，对于一个仅有小部分的图片、js与小量数据查询的应用，一个进程平均占用102468的内存不合理。联想到MaxRequestsPerChild可能有影响，别忘了，除非进程处理request的数量超过这个值，不然资源不会被释放。查看http.conf。确定这个值为0，将这个值改为400。光滑重启
 
     apachectl -k graceful
 
