@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "咖啡品尝"
+title: "咖啡是需要耐心的"
 date: 2014-06-06T23:30:00-08:00
 categories : cafe
 ---
