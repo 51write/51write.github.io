@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-cafe
 title: "法压壶冲泡方法"
 date: 2014-06-03T23:30:00-08:00
 categories : cafe
