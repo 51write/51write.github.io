@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="content">
   <div id="post">
-    <h1><a href="{{ site.posts.first.url }}">{{ site.categories.cafe.first.title }}</a></h1>
+    <h1><a href="{{ site.categories.cafe.first.url }}">{{ site.categories.cafe.first.title }}</a></h1>
     <div class="strap">{{ site.categories.cafe.first.date | date: "%b %d, %Y" }}</div>
     {{ site.categories.cafe.first.content }}
   </div>
