@@ -4,10 +4,8 @@
   <title>
     {% if page.title %}
       {{ page.title }} - jeremy
-    {% else if site.categories.index.first.title %}
-      {{ site.categories.index.first.title }} - jeremy
-	{% else %}
-      {{ 包工头的理想 }} - jeremy
+    {% else %}
+      {{ site.posts.first.title }} - jeremy
     {% endif %}
   </title>
   <link rel="alternate" title="jeremy" type="application/rss+xml" href="{{site.url}}/atom.xml" />
