@@ -2,7 +2,7 @@
 layout: post-cafe
 title: "咖啡调制"
 date: 2014-06-05T23:30:00-08:00
-categories : cafe
+categories : cafeindex
 ---
 ![](</images/2014/coffee-make-01.jpg>)
 
