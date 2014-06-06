@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "豆叔聊咖啡——手工冲泡咖啡醇厚度不足的问题(转载)"
+title: "手工冲泡咖啡醇厚度不足的问题(转载)"
 date: 2014-06-06T23:30:00-08:00
 categories : cafeindex
 ---
