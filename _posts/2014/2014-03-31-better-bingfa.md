@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-it
 title: "并发不是并行，它更好!(转载)"
 date: 2014-03-31T23:30:00-08:00
 categories:

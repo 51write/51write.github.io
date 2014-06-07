@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: post-it
 title: "一次Apache性能优化"
 date: 2014-04-09T23:30:00-08:00
 categories:
   -- it
   -- arch
+  -- index
 ---
 在keep-alive一节，尝试优化apache的线程数的时候，我一直带着两个疑问：一是为何我的进程占用内存高达100M之多；而是apache的线程数设置如何优化。还理解这一点，还得从apache
 mpm认识起。
@@ -89,10 +90,10 @@ Prefork优化的关键在于MaxClients与MaxRequestsPerChild。
 
 最佳的值：
 
-       apache_max_process_with_good_perfermance \< (total_hardware_memory /
-       apache_memory_per_process )  \* 2 ；
+       apache_max_process_with_good_perfermance < (total_hardware_memory /
+       apache_memory_per_process )  * 2 ；
 
-       apache_max_process = apache_max_process_with_good_perfermance \* 1.5
+       apache_max_process = apache_max_process_with_good_perfermance * 1.5
 
 计算httpd平均占用内存
 
@@ -104,10 +105,10 @@ Prefork优化的关键在于MaxClients与MaxRequestsPerChild。
 
 显示每个进程占用了大约100M的内存，假设机器内存为32G，可拿出16G用于Apache。代入公式，得出
 
-       apache_max_process_with_good_perfermance = 16 \* 1024 \* 1024 /
-       108468\*2=309
+       apache_max_process_with_good_perfermance = 16 * 1024 * 1024 /
+       108468*2=309
 
-       apache_max_process  = 309 \* 1.5=464
+       apache_max_process  = 309 * 1.5=464
 
 所以MaxClients可以设置为464
 
@@ -247,7 +248,7 @@ Syntax OK
 
 **MaxRequestsPerChild**
 
-上述的优化，情况没有明显改善，对于一个仅有小部分的图片、js与小量数据查询的应用，一个进程平均占用102468的内存不合理。联想到MaxRequestsPerChild可能有影响，别忘了，除非进程处理request的数量超过这个值，不然资源不会被释放。查看http.conf。确定这个值为0，将这个值改为400。光滑重庆
+上述的优化，情况没有明显改善，对于一个仅有小部分的图片、js与小量数据查询的应用，一个进程平均占用102468的内存不合理。联想到MaxRequestsPerChild可能有影响，别忘了，除非进程处理request的数量超过这个值，不然资源不会被释放。查看http.conf。确定这个值为0，将这个值改为400。光滑重启
 
     apachectl -k graceful
 

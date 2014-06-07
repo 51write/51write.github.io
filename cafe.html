@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="content">
   <div id="post">
-    <h1><a href="{{ site.posts.first.url }}">{{ site.categories.life.first.title }}</a></h1>
-    <div class="strap">{{ site.categories.life.first.date | date: "%b %d, %Y" }}</div>
-    {{ site.categories.life.first.content }}
+    <h1><a href="{{ site.categories.cafeindex.first.url }}">{{ site.categories.cafeindex.first.title }}</a></h1>
+    <div class="strap">{{ site.categories.cafeindex.first.date | date: "%b %d, %Y" }}</div>
+    {{ site.categories.cafeindex.first.content }}
   </div>
 </div>
 <div class="related">
@@ -13,7 +13,7 @@ layout: default
 <p>
 		<table>
 			<tbody>
-				{% for post in site.categories.life %}
+				{% for post in site.categories.cafe %}
 				<tr>
 					<td>
 						{{ post.date | date: "%b %d, %Y" }} 

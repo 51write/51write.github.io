@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-it
 title: "利用git hooks实现自动部署"
 date: 2014-04-17T23:30:00-08:00
 categories:
