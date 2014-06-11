@@ -60,7 +60,7 @@ categories :
 
 
 
-*表 (田口护)决定咖啡味道的要素*
+表 (田口护)决定咖啡味道的要素
 
 ![](</images/2014/coffee-yaosu.jpg>)
 
