@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "咖啡的萃取"
+title: "法压壶冲泡提高篇--味道的修正"
 date: 2014-06-02T23:30:00-08:00
 categories :
   -- cafe

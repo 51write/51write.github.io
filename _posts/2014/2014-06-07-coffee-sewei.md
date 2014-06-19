@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "法压壶冲泡有苦涩味的问题"
+title: "法压壶冲泡提高篇--有苦涩味的问题"
 date: 2014-06-02T23:30:00-08:00
 categories :
   -- cafe

@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "咖啡品尝"
+title: "法压壶冲泡基础篇--咖啡品尝"
 date: 2014-06-05T23:30:00-08:00
 categories : cafe
 ---

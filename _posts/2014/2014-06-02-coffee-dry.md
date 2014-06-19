@@ -1,6 +1,6 @@
 ---
 layout: post-cafe
-title: "咖啡DRY"
+title: "第一次DRY咖啡"
 date: 2014-06-02T23:30:00-08:00
 categories :
   -- cafe
