@@ -3,11 +3,11 @@ layout: default
 ---
 <div class="content">
   <div id="post">
-    <h1><a href="{{ site.categories.cafeindex.first.url }}">{{ site.categories.cafeindex.first.title }}</a></h1>
-    <div class="strap">{{ site.categories.cafeindex.first.date | date: "%b %d, %Y" }}</div>
-    {{ site.categories.cafeindex.first.content }}
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    <div class="strap">{{ page.date | date: "%b %d, %Y" }}</div>
+    {{ content }}
   </div>
-</div>
+  
   <div id="comments">
   <div id="disqus_thread"></div>
   <!-- 多说评论框 start -->
@@ -32,25 +32,25 @@ var duoshuoQuery = {short_name:"jeremyblog"};
   
 </div>
 <div class="related">
-<h3>all posts</h3>
-<p>
-		<table>
-			<tbody>
-				{% for post in site.categories.cafe %}
-				<tr>
-					<td>
-						{{ post.date | date: "%b %d, %Y" }} 
-					</td>
-					<td>
-						&raquo;
-					</td>
-					<td>
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					</td>
-				</tr>
-				{% endfor %}
-			</tbody>
-		</table>
-	</p>
-<br />
+    <h3>相关文章</h3>
+    <p>
+			<table>
+				<tbody>
+					{% for post in site.categories.xiagou %}
+					<tr>
+						<td>
+							{{ post.date | date: "%b %d, %Y" }} 
+						</td>
+						<td>
+							&raquo;
+						</td>
+						<td>
+							<a href="{{ post.url }}">{{ post.title }}</a>
+						</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</p>
+    <br />
 </div>
