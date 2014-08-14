@@ -3,9 +3,9 @@ layout: default
 ---
 <div class="content">
   <div id="post">
-    <h1><a href="{{ site.categories.xiagaoindex.first.url }}">{{ site.categories.xiagaoindex.first.title }}</a></h1>
-    <div class="strap">{{ site.categories.xiagaoindex.first.date | date: "%b %d, %Y" }}</div>
-    {{ site.categories.xiagaoindex.first.content }}
+    <h1><a href="{{ site.categories.xiagao.first.url }}">{{ site.categories.xiagao.first.title }}</a></h1>
+    <div class="strap">{{ site.categories.xiagao.first.date | date: "%b %d, %Y" }}</div>
+    {{ site.categories.xiagao.first.content }}
   </div>
 </div>
   <div id="comments">
@@ -36,7 +36,7 @@ var duoshuoQuery = {short_name:"jeremyblog"};
 <p>
 		<table>
 			<tbody>
-				{% for post in site.categories.xiagou %}
+				{% for post in site.categories.xiagao %}
 				<tr>
 					<td>
 						{{ post.date | date: "%b %d, %Y" }} 
